@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This document can be used for the following demos:
+    child.xsl, childstar.xsl, childtext.xsl, attribute.xsl, attributestar.xsl, descendant.xsl, self.xsl
+-->
+<beatles>
+    <beatle link="https://www.paulmccartney.com">
+        <name>
+            <firstname>Paul</firstname>
+            <lastname>McCartney</lastname>
+        </name>
+    </beatle>
+    <beatle link="https://www.johnlennon.com">
+        <name>
+            <firstname>John</firstname>
+            <lastname>Lennon</lastname>
+        </name>
+    </beatle>
+    <beatle link="https://www.georgeharrison.com">
+        <name>
+            <firstname>George</firstname>
+            <lastname>Harrison</lastname>
+        </name>
+    </beatle>
+    <beatle link="https://www.ringostarr.com">
+        <name>
+            <firstname>Ringo</firstname>
+            <lastname>Starr</lastname>
+        </name>
+    </beatle>
+    <beatle link="https://www.webucator.com" real="no">
+        <name>
+            <firstname>Nat</firstname>
+            <lastname>Dunn</lastname>
+        </name>
+    </beatle>
+</beatles>

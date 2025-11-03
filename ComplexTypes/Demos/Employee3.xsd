@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Salary">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="10000"/>
+      <xs:maxInclusive value="90000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Name">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FirstName"/>
+        <xs:element ref="MiddleName" minOccurs="0"/>
+        <xs:element ref="LastName"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FirstName"/>
+  <xs:element name="MiddleName"/>
+  <xs:element name="LastName"/>
+  <xs:element name="Wage" type="xs:decimal"/>
+  <xs:element name="Salary" type="Salary"/>
+  <xs:element name="Responsibilities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Responsibility" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Responsibility" type="xs:string"/>
+  <xs:element name="Employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:choice>
+          <xs:element ref="Salary"/>
+          <xs:element ref="Wage"/>
+        </xs:choice>
+        <xs:element ref="Responsibilities" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

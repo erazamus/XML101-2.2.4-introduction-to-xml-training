@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="Employee4.xsd">
+  <Name>
+    <FirstName>Paul</FirstName>
+    <LastName>McCartney</LastName>
+  </Name>
+  <Salary>90000</Salary>
+  <Bio>
+    Worked for <Company>the Beatles</Company> as a 
+      <JobTitle>Singer</JobTitle>.
+    Worked for <Company>the Beatles</Company> as a 
+      <JobTitle>Bass Guitarist</JobTitle>.
+    Worked for <Company>the Wings</Company> as a 
+      <JobTitle>Singer</JobTitle>.
+  </Bio>
+</Employee>

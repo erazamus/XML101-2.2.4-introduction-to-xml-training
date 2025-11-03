@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Book.xsd">
+  <Title>The Adventures of Huckleberry Finn</Title>
+  <Author Title="Mr.">
+    <Name>Mark Twain</Name>
+  </Author>
+</Book>

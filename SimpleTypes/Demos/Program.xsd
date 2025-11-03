@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="RunningRace">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="100 meters"/>
+            <xs:enumeration value="10 kilometers"/>
+            <xs:enumeration value="440 yards"/>
+            <xs:enumeration value="10 miles"/>
+            <xs:enumeration value="Marathon"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Gymnastics">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Vault"/>
+            <xs:enumeration value="Floor"/>
+            <xs:enumeration value="Rings"/>
+            <xs:enumeration value="Beam"/>
+            <xs:enumeration value="Uneven Bars"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Event">
+        <xs:union memberTypes="RunningRace Gymnastics"/>
+    </xs:simpleType>
+    <xs:element name="Program">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Event" type="Event"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

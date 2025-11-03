@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:noNamespaceSchemaLocation="Author3.xsd">
+  <Name Pseudonym="true" HomePage="https://www.nathanielhawthorne.com">
+    <FirstName Full="false">Nat</FirstName>
+    <LastName>Hawthorne</LastName>
+  </Name>
+</Author>

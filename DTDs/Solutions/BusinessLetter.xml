@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BusinessLetter SYSTEM "BusinessLetter.dtd">
+<BusinessLetter>
+  <Head>
+    <SendDate>September 29, 2024</SendDate>
+    <Recipient>
+      <Name Title="Mr.">
+        <FirstName>Joshua</FirstName>
+        <LastName>Woodlock</LastName>
+      </Name>
+      <Company>Woodlock &amp; Woodlock</Company>
+      <Address>
+        <Street>291 Broadway Ave.</Street>
+        <City>New York</City>
+        <State>NY</State>
+        <Zip>10007</Zip>
+        <Country>United States</Country>
+      </Address>
+    </Recipient>
+  </Head>
+  <Body>
+    <List>
+      <Heading>Along with this letter, I have enclosed the following items:</Heading>
+      <ListItem>two original, execution copies of the Webucator Master Services Agreement</ListItem>
+      <ListItem>two original, execution copies of the Webucator Premier Support for Developers Services Description between Woodlock &amp; Woodlock and Webucator, Inc.</ListItem>
+    </List>
+    <Para>Please sign and return all four original, execution copies to me at your
+earliest convenience.  Upon receipt of the executed copies, we will
+immediately return a fully executed, original copy of both agreements to you.</Para>
+    <Para>lease send all four original, execution copies to my attention as follows:
+  Webucator, Inc.
+    4933 Jamesville Rd.
+    Jamesville, NY 13078  USA
+    Attn: Bill Smith
+    </Para>
+    <Para>If you have any questions, feel free to call me at 800-555-1000 x123 or e-mail me at bsmith@webucator.com.</Para>
+  </Body>
+  <Foot>
+    <Closing>
+      <Name>
+        <FirstName>Bill</FirstName>
+        <LastName>Smith</LastName>
+      </Name>
+      <JobTitle>VP, Operations</JobTitle>
+    </Closing>
+  </Foot>
+</BusinessLetter>

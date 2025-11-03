@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="AuthorNillable.xsd">
+    <FirstName>Mark</FirstName>
+    <MiddleName xsi:nil="true"/>
+    <LastName>Twain</LastName>
+</Author>

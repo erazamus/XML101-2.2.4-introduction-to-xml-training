@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Beatles</title>
+   </head>
+   <body>
+      <h1>Functions and Operators</h1>
+      <table>
+         <thead>
+            <tr>
+               <th>Function</th>
+               <th>Example</th>
+               <th>XPath Expression</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><code>count()</code></td>
+               <td><code>count(beatles/beatle):</code></td>
+               <td><strong>5</strong></td>
+            </tr>
+            <tr>
+               <td rowspan="2"><code>contains()</code></td>
+               <td><code>contains(//beatle[last()]/@link,'webucator'):</code></td>
+               <td><strong>true</strong></td>
+            </tr>
+            <tr>
+               <td><code>contains(//beatle[last()]/@link,'ringostarr'):</code></td>
+               <td><strong>false</strong></td>
+            </tr>
+            <tr>
+               <td><code>=</code></td>
+               <td><code>beatles/beatle[ @real = 'no' ]//firstname:</code></td>
+               <td><strong>Nat</strong></td>
+            </tr>
+            <tr>
+               <td><code>!=</code></td>
+               <td><code>beatles/beatle[ @real != 'no' ]//firstname:</code></td>
+               <td><strong></strong></td>
+            </tr>
+            <tr>
+               <td><code>not()</code></td>
+               <td><code>beatles/beatle[ not(@real) ][2]//firstname:</code></td>
+               <td><strong>John</strong></td>
+            </tr>
+            <tr>
+               <td><code>last()</code></td>
+               <td><code>beatles/beatle[ not(@real) ][last()]//firstname:</code></td>
+               <td><strong>Ringo</strong></td>
+            </tr>
+            <tr>
+               <td><code>not() &amp; =</code></td>
+               <td><code>beatles/beatle[ not(@real='no') ][2]//firstname:</code></td>
+               <td><strong>John</strong></td>
+            </tr>
+            <tr>
+               <td><code>not() &amp; = &amp; last()</code></td>
+               <td><code>beatles/beatle[ not(@real='no') ][last()]//firstname:</code></td>
+               <td><strong>Ringo</strong></td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

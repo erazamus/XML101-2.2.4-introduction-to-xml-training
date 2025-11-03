@@ -1,0 +1,36 @@
+<!--root element-->
+<!ELEMENT BusinessLetter (Head, Body, Foot)>
+
+<!--head elements and attributes-->
+<!ELEMENT Head (SendDate, Recipient)>
+<!ELEMENT Recipient (Name, Company, Address)>
+<!ELEMENT Name (FirstName, LastName)>
+<!ATTLIST Name
+  Title CDATA #IMPLIED>
+<!ELEMENT Address (Company*, Street, City, State, Zip, Country)>
+
+<!--body elements-->
+<!ELEMENT Body (List, Para+)>
+<!ELEMENT Para (#PCDATA | Person | Phone | Email)*>
+<!ELEMENT List (Heading, ListItem+)>
+<!ELEMENT Person (Name, Address)>
+
+<!--foot elements-->
+<!ELEMENT Foot (Closing)>
+<!ELEMENT Closing (Name, JobTitle)>
+
+<!--simple text elements-->
+<!ELEMENT SendDate (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Heading (#PCDATA)>
+<!ELEMENT ListItem (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT JobTitle (#PCDATA)>

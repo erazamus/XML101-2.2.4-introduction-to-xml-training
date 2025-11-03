@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EmployeeFixed.xsd">
+    <Salary>49000</Salary>
+    <Title>Sales Manager</Title>
+    <Status>current</Status>
+</Employee>

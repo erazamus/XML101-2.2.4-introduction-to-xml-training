@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="EmployeeList.xsd">
+    <Salary>44000</Salary>
+    <Title>Salesperson</Title>
+    <VacationDays>2024-08-13 2024-08-14 2024-08-15</VacationDays>
+</Employee>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+menu with dishes (declare the dish type)...each dish will have name, price, description, and how many
+-->
+<menu>
+    <dish type="breakfast">
+        <name>French Toast Flavor</name>
+        <price>$7.99</price>
+        <description>3 Texas toast slices with our signature syrup.</description>
+        <calories>550</calories>
+    </dish>
+    <dish type="dinner">
+        <name>Kitchen Special</name>
+        <price>$12.99</price>
+        <description>Steak with mashed potatoes and gravy.</description>
+        <calories>880</calories>
+    </dish>
+</menu>
