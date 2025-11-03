@@ -28,12 +28,18 @@
   <xs:element name="Length" type="SongTime"/>
   <xs:element name="Song">
     <xs:complexType>
-      <xs:sequence>
+      <xs:all>
         <xs:element ref="Title"/>
         <xs:element ref="Year"/>
-        <xs:element ref="Artist"/>
-        <xs:element ref="Length"/>
-      </xs:sequence>
+        <xs:element name="Artists">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Artist" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </complexType>
+        </xs:element>
+        <xs:element ref="Length" minOccurs="0"/>
+      </xs:all>
     </xs:complexType>
   </xs:element>
 </xs:schema>
