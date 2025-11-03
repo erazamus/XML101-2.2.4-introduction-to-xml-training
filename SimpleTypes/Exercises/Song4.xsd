@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Song">
-        <xs:element name="Title" type="xs:string"?>
-        <xs:element name="Year" type="xs:gYear"?>
-        <xs:element name="Artist" type="xs:string"?>
-        
+
+
         <xs:simpleType name="SongLength">
         <xs:restriction base="xs:string">
             <xs:minInclusive value="Short"/>
@@ -15,6 +13,10 @@
         <xs:simpleType name="SongTime">
            <xs:union memberTypes="xs:duration SongLength"/> 
         </xs:simpleType>
+        <xs:element name="Title" type="xs:string"?>
+        <xs:element name="Year" type="xs:gYear"?>
+        <xs:element name="Artist" type="xs:string"?>
+        <xs:element name="Length" type="SongTime"?>
         <xs:complexType>
             <xs:sequence>
                 <!--
@@ -23,9 +25,10 @@
                     2. Year
                     3. Artist
                 -->
-                <xs:element name="Title"/>
-                <xs:element name="Year"/>
-                <xs:element name="Artist"/>
+                <xs:element ref="Title"/>
+                <xs:element ref="Year"/>
+                <xs:element ref="Artist"/>
+                <xs:element ref="Length"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
